@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="container">
+            <h1>Hi, I'm <span>Jahnavi Ranjan</span></h1>
+            <p>A Creative Web Developer with a passion for designing engaging digital experiences</p>
+            <a href="#projects" class="btn-primary">See My Work</a>
+        </div>
+        <img src="images/profile-photo.JPG" alt="Your Profile Photo" class="profile-photo">
+    </header>
+
+
+    
+    <!-- About Me Section -->
+<section id="about-me">
+    <h2>About Me</h2>
+    
+    <!-- Background -->
+    <div class="about-section">
+        <h3>Background</h3>
+        <p>
+            Hello, I'm Jahnavi Ranjan, a passionate web developer with a love for creating beautiful and functional websites. Over the past few years, I have honed my skills in front-end and back-end technologies, working on various projects that range from personal portfolios to complex e-commerce websites. My primary focus is to create engaging, user-friendly, and highly responsive websites that meet the client's needs.
+        </p>
+    </div>
+
+    <!-- Education -->
+    <div class="about-section">
+        <h3>Education</h3>
+        <ul>
+            <li>
+                <strong>Bachelor of Computer Applications</strong> – Symbiosis Institute of Computer Studies and Research  
+                <span>Graduation Year: 2020</span><br>
+                Description: Specialized in Web Development, Artificial Intelligence and Machine Learning and Database Management and 
+            </li>
+            <li>
+                <strong>Full Stack Web Development Certification</strong> – Codecademy  
+                <span>Completion Year: 2021</span><br>
+                Description:  Completed a 6-month certification program focused on full-stack web development, covering HTML, CSS, JavaScript, React, Node.js, and MongoDB.
+            </li>
+        </ul>
+    </div>
+
+    <!-- Professional Experience -->
+    <div class="about-section">
+        <h3>Professional Experience</h3>
+        <ul>
+            <li>
+                <strong>Web Developer</strong> – XYZ Tech Solutions 
+                <span>March 2021 – Present</span><br>
+                Description: At XYZ Tech Solutions, I worked on designing and developing websites using HTML, CSS, JavaScript, and modern frameworks like React and Node.js. I collaborated closely with designers and project managers to create seamless, user-centric experiences for clients. Some of the projects included e-commerce platforms and portfolio websites for local businesses.
+            </li>
+            <li>
+                <strong>Junior Web Developer</strong> – Web Innovators  
+                <span>June 2020 – February 2021</span><br>
+                Description: As a Junior Web Developer, I contributed to building user interfaces and worked on bug fixes for existing web applications. I enhanced the user experience by ensuring responsiveness across multiple devices and worked on performance optimization of the websites.
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill-set">
+                <div class="skill">
+                    <h3>HTML & CSS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level html-css"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level javascript"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>React</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level react"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Node.js</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level nodejs"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <img src="images/portfolio-website-large.jpg" alt="Project 1" class="project-thumb">
+                <div class="project-info">
+                    <h3>Portfolio Website</h3>
+                    <p>This project is a personal portfolio website designed to showcase my web development skills. It includes sections such as About Me, Skills, and Projects. The layout is responsive and user-friendly, built using HTML, CSS, and JavaScript.</p>
+                    <button class="btn-secondary" data-project="project1">View Details</button>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="images/e-commerce-website-large.jpg" alt="Project 2" class="project-thumb">
+                <div class="project-info">
+                    <h3>E-Commerce Website</h3>
+                    <p>An online store with features like product listings, a shopping cart, and a checkout process. It was built using React for the frontend and Node.js/Express for the backend, with a MongoDB database to manage product and order information.</p>
+                    <button class="btn-secondary" data-project="project2">View Details</button>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="images/weather-app-large.jpg" alt="Project 3" class="project-thumb">
+                <div class="project-info">
+                    <h3>Weather App</h3>
+                    <p>A simple weather application that fetches real-time weather data using the OpenWeatherMap API. The user can search for weather conditions in any city, and the app displays current temperature, humidity, and a 5-day forecast.</p>
+                    <button class="btn-secondary" data-project="project3">View Details</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div id="projectModal" class="modal">
+         <div class="modal-content">
+             <span class="close">&times;</span>
+             <h2 id="projectTitle">Project Title</h2>
+             <img id="projectImage" src="" alt="Project Image" class="modal-img">
+             <p id="projectDescription">Project Description</p>
+         </div>
+    </div>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Jahnavi Ranjan | <a href="mailto:jahnavi23@example.com">Contact Me</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
